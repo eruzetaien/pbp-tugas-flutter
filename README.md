@@ -1,3 +1,38 @@
+## TUGAS 2
+
+#### Navigator.push dan Navigator.pushReplacement
+`Navigator.push` akan melakukan push, sehingga halaman sebelumnya tepat berada di bawah halaman saat ini
+`Navigator.pushReplacement` akan melakukan push halaman lalu menghapus (pop) halaman sebelumnya, sehingga stack tidak akan penuh.
+
+#### Widget-widget yang Digunakan
+-   `Drawer`, menampilkan dan menyembunyikan *sidebar*
+-   `Navigator`, melakukaan routing, mengatur halaman yang akan ditampilkan
+-   `Form`, membuat formulir yang dapat menerima masukan user
+-   `SizedBox`, memberikan space dari tinggi dan lebar yang diberikan
+-   `TextFormField`, menerima input teks di `Form` berupa String
+-   `InputDecoration`, mempercantik `TextFormField`
+-   `DropDownButton`, membuat input *dropdown*
+-   `DropDownMenuItem`, membuat daftar pilihan di *dropdown*
+-   `ButtonStyle`, mempercantik tombol
+-   `ListTile`, seperti card, terdiri dari 3 baris teks dan bisa ditambahkan icon
+-   `ListView`, menampung `ListTile` dapat dimasukkan widget dengan iterasi
+
+#### Jenis Event pada Flutter
+-   `onChanged`
+-   `onPressed`
+-   `onSaved`
+
+#### Cara Kerja Navigator
+`Navigator` mengganti halaman dengan konsep stack, dimana halaman teratas pada stack lah yang akan ditampilkan. Sama seperti strukdur data stack, navigator memiliki method push dan pop untuk mengganti halaman
+
+#### Implementasi tugas 8
+1. Membuat widget `Drawer` dan menerapkan routing di dalamnya mengguanakan `Navigator`  
+2. Menambahkan 3 file dart, 2 akan digunakan untuk routing yaitu, halaman form dan halaman result, satu lagi akan digunakan untuk mendefinisikan class budget  
+3. Membuat halaman form yang berisi input judul dan nominal budget berupa widget `TextFormField`, dan input jenis budget berupa widget `DropDownButton`  
+4. Membuat class Budget dan melakukan instansiasi tiap input dimasukkan di halaman form  
+5. Menampilkan objek-objek Budget dalam widget `ListTile`, dan dimasukkan ke dalam widget `ListView`melalui iterasi  
+
+
 ## TUGAS 1
 
 #### Stateless Widget dan *Stateful Widget*
