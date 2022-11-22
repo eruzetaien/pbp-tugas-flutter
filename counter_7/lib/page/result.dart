@@ -1,8 +1,8 @@
 import 'package:counter_7/main.dart';
 import 'package:flutter/material.dart';
-import './form.dart';
-import './drawer.dart';
-import './budget.dart';
+import 'form.dart';
+import '../util/drawer.dart';
+import '../model/budget.dart';
 
 class ResultPage extends StatefulWidget {
   const ResultPage({super.key});

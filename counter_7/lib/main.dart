@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import './form.dart';
-import './result.dart';
-import './drawer.dart';
+import 'page/form.dart';
+import 'page/result.dart';
+import 'util/drawer.dart';
 
 void main() {
   runApp(const MyApp());

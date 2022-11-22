@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:counter_7/main.dart';
-import './result.dart';
-import './drawer.dart';
-import './budget.dart';
+import 'result.dart';
+import '../util/drawer.dart';
+import '../model/budget.dart';
 
 class MyFormPage extends StatefulWidget {
   const MyFormPage({super.key});
