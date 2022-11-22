@@ -49,7 +49,7 @@ class _MyWatchlistPageState extends State<MyWatchlistPage> {
 
                       return Container(
                           margin: const EdgeInsets.symmetric(
-                              horizontal: 16, vertical: 12),
+                              horizontal: 16, vertical: 5),
                           padding: const EdgeInsets.all(3.0),
                           decoration: BoxDecoration(
                             color: Colors.white,
@@ -58,7 +58,7 @@ class _MyWatchlistPageState extends State<MyWatchlistPage> {
                                 color: myWatchlist.fields.watched
                                     ? Colors.green
                                     : Colors.grey,
-                                width: 3),
+                                width: 2),
                           ),
                           child: ListTile(
                             title: Text(myWatchlist.fields.title),
