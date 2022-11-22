@@ -1,4 +1,30 @@
-## TUGAS 2
+## TUGAS 9
+
+#### Pengambilan data JSON
+Pengambilan data JSON dapat dilakukan tanpa membuat model terlebih dahulu, data JSON berupa List Map, semua value dari key setiap map dapat disimpan dalam list. Tentunya cara ini kurang efisien dibanding dengan memasukkan data JSON tersebut ke dalam objek model. Tanpa menggunakan model data yang disimpan jadi kurang representatif. 
+
+#### Widget-widget yang Digunakan
+-   `FutureBuilder`, membuat widget berdasarkan hasil dari future
+-   `AsyncSnapshot`, representasi yang immutable dari hasil interaksi secara asinkronus
+-   `CircularProgressIndicator`, menampilkan animasi loading apabila data belum dimuat
+-   `MouseRegion`, membuat efek hover pada widget
+-   `GestureDetector`, membuat user dapat berinteraksi dengan widget
+-   `Align`, menyelaraskan widget widget
+
+#### Mekanisme pengambilan data dari JSON hingga dapat ditampilkan pada Flutter.
+- Data JSON yang tersedia di web browser diambil secara asinkronus menggunakan class Future  
+- Data yang diambil dijadikan sebuah objek dari model yang telah dibuat  
+- Menampilkan data attribut dari tiap objek ke dalam widget, dapat dilakukan dengan iterasi
+
+#### Implementasi tugas 9
+1. Membuat model MyWatchlist untuk data JSON yang akan diambil menggunakan website QuickType
+2. Membuat method untuk melakukan fetch data tersebut dengan class Future, data yang yang diambil akan direpresentasikan dalam List objek MyWatchlist  
+3. Menampilkan judul objek-objek tersebut dalam widget `ListTile`, dan dimasukkan ke dalam widget `ListView`melalui iterasi  
+4. Membuat halaman untuk detail objek MyWatchlist  
+5. Mengikat tiap `listTile` ke halaman detail tersebut  
+
+
+## TUGAS 8
 
 #### Navigator.push dan Navigator.pushReplacement
 `Navigator.push` akan melakukan push, sehingga halaman sebelumnya tepat berada di bawah halaman saat ini
@@ -33,7 +59,7 @@
 5. Menampilkan objek-objek Budget dalam widget `ListTile`, dan dimasukkan ke dalam widget `ListView`melalui iterasi  
 
 
-## TUGAS 1
+## TUGAS 7
 
 #### Stateless Widget dan *Stateful Widget*
 Stateless widget adalah widget yang tidak memiliki state atau kondisi, artinya widget tidak akan berubah di kondisi apapun, dari awal inisiasi hingga aplikasi berhenti.
