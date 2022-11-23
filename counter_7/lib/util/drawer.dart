@@ -52,8 +52,7 @@ class MyDrawer extends StatelessWidget {
               // Route menu ke halaman myWatchlist
               Navigator.pushReplacement(
                 context,
-                MaterialPageRoute(
-                    builder: (context) => const MyWatchlistPage()),
+                MaterialPageRoute(builder: (context) => MyWatchlistPage()),
               );
             },
           ),

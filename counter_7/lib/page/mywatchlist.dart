@@ -41,7 +41,11 @@ class _MyWatchlistPageState extends State<MyWatchlistPage> {
                     ],
                   );
                 } else {
-                  List<MyWatchlist> watchList = snapshot.data!;
+                  if (MyWatchlist.listWatchList.isEmpty) {
+                    MyWatchlist.listWatchList = snapshot.data!;
+                  }
+                  List<MyWatchlist> watchList = MyWatchlist.listWatchList;
+
                   return ListView.builder(
                     itemCount: watchList.length,
                     itemBuilder: (context, index) {

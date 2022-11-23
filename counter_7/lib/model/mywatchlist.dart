@@ -20,6 +20,7 @@ class MyWatchlist {
   Model? model;
   int pk;
   Fields fields;
+  static List<MyWatchlist> listWatchList = [];
 
   factory MyWatchlist.fromJson(Map<String, dynamic> json) => MyWatchlist(
         model: modelValues.map[json["model"]],
